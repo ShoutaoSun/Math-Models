@@ -1,0 +1,2 @@
+clc;clear;
+load fisheriris
