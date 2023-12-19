@@ -11,8 +11,8 @@
   - `def forward(self, input_sentence)`
 - ```class RNN_model(nn.Mudule)``` 
   目的：定义整个循环神经网络模型
-  - `def __init__(self, batch_sz, vocab_len, word_embedding, embedding_dim, lstm_hidden_dim)`
+  - `def __init__(self, batch_sz, vocab_len, word_embedding, embedding_dim, lstm_hidden_dim)`  
   目的：初始化词嵌入层、LSTM层、全连接层、激活函数（LogSoftmax）并调用`weights_init(m)`
   - `def forward(self, sentence, is_test=False)`  
-  目的：前向传播中，通过词嵌入层将输入的句子转换成词嵌入表示，然后输入LSTM层，最后通过全连接层和LogSoftmax激活函数得到模型的输出
-  若`is_test=True`，返回模型的最后一个预测值，否则返回模型的所有输出。
+  目的：前向传播中，通过词嵌入层将输入的句子转换成词嵌入表示，然后输入LSTM层，最后通过全连接层和
+  LogSoftmax激活函数得到模型的输出若`is_test=True`，返回模型的最后一个预测值，否则返回模型的所有输出。
