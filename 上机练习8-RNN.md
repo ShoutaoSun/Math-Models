@@ -9,7 +9,7 @@
   索引转换成词嵌入向量。
   - `def __init__(self, vocab_length, embedding_dim)`
   - `def forward(self, input_sentence)`
-- ```class RNN_model(nn.Mudule)
+- ```class RNN_model(nn.Mudule)``` 
   目的：定义整个循环神经网络模型
   - `def __init__(self, batch_sz, vocab_len, word_embedding, embedding_dim, lstm_hidden_dim)`
   目的：初始化词嵌入层、LSTM层、全连接层、激活函数（LogSoftmax）并调用`weights_init(m)`
