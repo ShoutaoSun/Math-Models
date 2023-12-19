@@ -18,3 +18,16 @@
   - `def forward(self, sentence, is_test=False)`  
   目的：前向传播中，通过词嵌入层将输入的句子转换成词嵌入表示，然后输入LSTM层，最后通过全连接层和
   LogSoftmax激活函数得到模型的输出。若`is_test=True`，返回模型的最后一个预测值，否则返回模型的所有输出。
+### ② main.py
+- `def process_poems1(file_name)`
+  目的：将诗歌文本处理成数字形式，以便后续预测
+- `def generate_batch(batch_size, poems_vec, word_to_int)`
+  目的：生成批处理数据的函数，为模型的训练提供输入和相应目标的输出
+- `def run_training()`  
+  目的：训练的循环，用于训练LSTM模型，生成诗歌文本
+- `def to_word(predict, vocabs)`
+  目的：将预测的结果转化为汉字
+- `def pretty_print_poem(poem)`
+  目的：令打印的结果更加工整
+- `def gen_poem(begin_word)`
+  目的：基于预训练的LSTM模型，根据指定的开始字生成一句诗歌
